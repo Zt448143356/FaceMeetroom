@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.harbour.facemeetroom">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".scan.ScanApplication"
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionBar">
+        <activity android:name=".activity.ChoiceActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.FaceRegisterActivity" />
+        <activity android:name=".activity.InfoRegisterActivity" />
+        <activity android:name=".activity.UserinfoActivity" />
+        <activity android:name=".activity.ErrorActivity" />
+        <activity android:name=".activity.SearchResultActivity" />
+        <activity android:name=".activity.MyRoomActivity" />
+        <activity android:name=".activity.ReserveActivity" />
+        <activity android:name=".activity.edit.EditReserveActivity" />
+        <activity android:name=".activity.ScanActivity" />
+        <activity android:name=".activity.edit.EditInfoActivity" />
+        <activity android:name=".activity.edit.EditPasswordActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.ScanInfoActivity"></activity>
+    </application>
+
+</manifest>
